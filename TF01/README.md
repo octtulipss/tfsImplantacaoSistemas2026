@@ -34,4 +34,5 @@ chmod +x scripts/install.sh
 
 # 4. Execute o script de instalação
 cd scripts
+
 ./install.sh
