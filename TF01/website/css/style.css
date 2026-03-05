@@ -1,0 +1,59 @@
+/* Paleta PetVital: Verde Menta, Grafite e Branco */
+:root {
+    --primary: #4ecdc4;    /* Verde Menta */
+    --secondary: #2f3e46;  /* Cinza Grafite */
+    --accent: #ff6b6b;     /* Coral para destaques/emergência */
+    --bg-light: #f7f9f9;   /* Fundo Suave */
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: var(--bg-light); 
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid #45b7af;
+}
+
+header h1 { font-size: 2.5rem; text-transform: lowercase; font-weight: 300; }
+header h1 b { font-weight: 800; } /* Para destacar o 'Vital' */
+
+nav { background: var(--secondary); padding: 10px 0; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; }
+nav a { 
+    color: var(--white); 
+    text-decoration: none; 
+    font-weight: 600; 
+    font-size: 0.9rem;
+}
+nav a:hover { color: var(--primary); transition: 0.3s; }
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h2 { color: var(--primary); margin-bottom: 20px; }
+
+.servicos-lista li {
+    background: #f1f4f4;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid var(--accent);
+}
+
+footer { text-align: center; padding: 30px; background: var(--secondary); color: #cad2c5; }
