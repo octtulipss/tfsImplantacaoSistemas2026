@@ -1,0 +1,7 @@
+healthchecks:
+  web-frontend:
+    type: http
+    url: http://dashboard:80
+    interval: 30s
+    timeout: 10s
+    expected_status: 200
