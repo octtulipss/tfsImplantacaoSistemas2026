@@ -9,24 +9,22 @@ Este projeto implementa um ecossistema de monitoramento com healthchecks intelig
 - **Instituição:** UniFAAT
 - **Disciplina:** Implementação de Software
 
-## 🚀 Funcionalidades Implementadas
-- **Healthchecks Inteligentes:** Verificações automáticas de HTTP (API/Frontend) e Database (MySQL).
-- **Dashboard Real-time:** Interface para visualização de Uptime e Tempo de Resposta.
-- **Automação de Build:** Script centralizado para geração de imagens Docker sem cache.
-- **Deploy Zero Downtime:** Estratégia de atualização com validação de saúde pós-instalação.
-- **Rollback Automático:** Retorno imediato ao estado estável em caso de falha no deploy.
-- **Manutenção:** Scripts para limpeza de recursos e logs antigos.
+## Funcionalidades Implementadas
+- Healthchecks inteligentes avançados (HTTP, TCP, Database) com resposta de performance.
+- Dashboard visual de monitoramento em tempo real (HTML/CSS/JS).
+- API em Python (Flask) para coleta e histórico de métricas.
+- Sistema de alertas e gatilhos (email, webhook) baseado em mudanças de estado.
+- Automação completa de containers utilizando Docker Compose.
+- Scripts de manutenção avançados (Backup automatizado, Limpeza Segura, Rollback e Monitoramento via Terminal).
 
-## 🛠️ Tecnologias Utilizadas
-- **Backend:** Python (Flask)
-- **Frontend:** HTML5, CSS3, JS (Chart.js)
-- **Banco de Dados:** MySQL 8.0
-- **Orquestração:** Docker & Docker Compose
-- **Automação:** Shell Script (Bash)
+## Como Executar
 
-## 📦 Como Executar
+### Pré-requisitos
+- Docker e Docker Compose instalados.
+- Ambiente Bash (Linux/Mac/WSL/Git Bash) para os scripts de automação.
 
-### 1. Clonar e Acessar
-```bash
-git clone [https://github.com/SeuUsuario/tfsImplantacaoSistemas2026.git](https://github.com/SeuUsuario/tfsImplantacaoSistemas2026.git)
-cd TF05
+### Passos para Execução
+
+1. **Subir a infraestrutura e API:**
+   ```bash
+   docker compose up -d --build
